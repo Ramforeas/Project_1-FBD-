@@ -4,51 +4,202 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Мой сайт</title>
-    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+    <title>Avion</title>
 </head>
 
 <body>
     <header>
-        <div>
-            <h1>МойСайт</h1>
-        </div>
-        <nav>
+        <h1>Avion</h1>
+        <button class="icon_button">
+            <img src="assets\icons\Search.png">
+        </button>
+        <button class="icon_button">
+            <img src="assets\icons\Shopping--cart.png">
+        </button>
+        <button class="icon_button">
+            <img src="assets\icons\User--avatar.png">
+        </button>
+        <nav id="main_nav">
             <ul>
-                <li><a href="#home">Главная</a></li>
-                <li><a href="#about">О нас</a></li>
-                <li><a href="#services">Услуги</a></li>
-                <li><a href="#contact">Контакты</a></li>
+                <li><a href="">Plant pots</a></li>
+                <li><a href="">Ceramics</a></li>
+                <li><a href="">Tables</a></li>
+                <li><a href="">Chairs</a></li>
+                <li><a href="">Crockery</a></li>
+                <li><a href="">Tableware</a></li>
+                <li><a href="">Cutlery</a></li>
             </ul>
         </nav>
     </header>
+
     <main>
-        <section id="home">
-            <h2>Добро пожаловать!</h2>
-            <p>Это главная страница нашего веб-приложения.</p>
+        <section id="intro_about">
+            <h2>The furniture brand for the future, with timeless designs</h2>
+            <button class="view_collection">View collection</button>
+            <p>A&nbsp;new era in&nbsp;eco friendly furniture with Avelon, the French luxury retail brand 
+with nice fonts, tasteful colors and a&nbsp;beautiful way to&nbsp;display things digitally
+using modern web technologies.</p>
+            <img src="assets\img\Chair 2.0..png">
         </section>
-        <section id="about">
-            <h2>О нас</h2>
-            <p>Мы компания, которая занимается созданием качественных веб-решений.
-            </p>
+
+        <section id="advantages">
+            <h2>What makes our brand different</h2>
+
+            <div id="delivery">
+                <img src="assets\icons\Delivery.png">
+                <h3>Next day as&nbsp;standard</h3>
+                <p>Order before 3pm and get your order
+the next day as&nbsp;standard</p>
+            </div>
+        
+            <div id="quality">
+                <img src="assets\icons\Checkmark--outline.png">
+                <h3>Made by&nbsp;true artisans</h3>
+                <p>Handmade crafted goods made with
+real passion and craftmanship</p>
+            </div>
+
+            <div id="price">
+                <img src="assets\icons\Purchase.png">
+                <h3>Unbeatable prices</h3>
+                <p>For our materials and quality you
+won&rsquo;t find better prices anywhere</p>
+            </div>
+
+            <div id="recycling">
+                <img src="assets\icons\Sprout.png">
+                <h3>Recycled packaging</h3>
+                <p>We&nbsp;use 100% recycled packaging to
+ensure our footprint is&nbsp;manageable</p>
+            </div>
         </section>
-        <section id="services">
-            <h2>Наши услуги</h2>
-            <ul>
-                <li>Веб-разработка</li>
-                <li>Дизайн</li>
-                <li>Консультации</li>
-            </ul>
+
+        <section id="new_ceramics">
+            <h2>New ceramics</h2>
+
+            <div id="dandy_chair">
+                <img src="assets\img\Chair.png">
+                <p>The Dandy chair</p>
+                <p>&pound;250</p>
+            </div>
+
+            <div id="rustic_vase_set">
+                <img src="assets\img\RusticVase.png" height="375" width="305">
+                <p>Rustic Vase Set</p>
+                <p>&pound;155</p>
+            </div>
+
+            <div id="silky_vase">
+                <img src="assets\img\Vase.png">
+                <p>The Silky Vase</p>
+                <p>&pound;125</p>
+            </div>
+            
+            <div id="lucy_lamp">
+                <img src="assets\img\Chandelier.png">
+                <p>The Lucy Lamp</p>
+                <p>&pound;399</p>
+            </div>
+            <button class="view_collection">View collection</button>
         </section>
-        <section id="contact">
-            <h2>Контакты</h2>
-            <p>Email: info@example.com</p>
-            <p>Телефон: +7 (123) 456-78-90</p>
+
+        <section id="popular_products">
+            <h2>Our popular products</h2>
+
+            <div id="suede_sofa">
+                <img src="assets\img\Sofa.png">
+                <p>The Poplar suede sofa</p>
+                <p>&pound;980</p>
+            </div>
+
+            <div id="dandy_chair">
+                <img src="assets\img\Chair.png">
+                <p>The Dandy chair</p>
+                <p>&pound;250</p>
+            </div>
+
+            <div id="dandy_chair_bw">
+                <img src="assets\img\Black-white chair.png">
+                <p>The Dandy chair</p>
+                <p>&pound;250</p>
+            </div>
+            <button class="view_collection">View collection</button>
+        </section>
+
+        <section id="main_sign_up">
+            <h2>Join the club and get the benefits</h2>
+            <p>Sign up&nbsp;for our newsletter and receive exclusive offers on&nbsp;new
+ranges, sales, pop up&nbsp;stores and more</p>
+            <input type="email" placeholder="your@email.com">
+            <button id="sign_up_button_main">Sign up</button>
+        </section>
+
+        <section id="outro_about">
+            <h2>From a&nbsp;studio in&nbsp;London to&nbsp;a&nbsp;global brand with
+over 400 outlets</h2>
+                <p>When we&nbsp;started Avion, the idea was simple. Make high quality furniture
+affordable and available for the mass market.</p>
+                <p>Handmade, and lovingly crafted furniture and homeware is&nbsp;what we&nbsp;live,
+breathe and design so&nbsp;our Chelsea boutique become the hotbed for the
+London interior design community</p>
+                <button id="get_in_touch">Get in touch</button>
+                <img src="assets\img\Composition.png">
         </section>
     </main>
+
     <footer>
-        <p>&copy; 2025 Сайт. Все права защищены.</p>
+        <nav id="footer_nav">
+            <div id="menu">
+                <h3>Menu</h3>
+                <ul>
+                    <li><a href="">New arrivals</a></li>
+                    <li><a href="">Best sellers</a></li>
+                    <li><a href="">Recently viewed</a></li>
+                    <li><a href="">Popular this week</a></li>
+                    <li><a href="">All products</a></li>
+                </ul>
+            </div>
+
+            <div id="categories">
+                <h3>Categories</h3>
+                <ul>
+                    <li><a href="">Crockery</a></li>
+                    <li><a href="">Furnitures</a></li>
+                    <li><a href="">Homeware</a></li>
+                    <li><a href="">Chairs</a></li>
+                    <li><a href="">Crockery</a></li>
+                </ul>
+            </div>
+
+            <div id="our_company">
+                <h3>Our company</h3>
+                <ul>
+                    <li><a href="">About us</a></li>
+                    <li><a href="">Vacancies</a></li>
+                    <li><a href="">Contact us</a></li>
+                    <li><a href="">Privacy</a></li>
+                    <li><a href="">Returns policy</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <section id="footer_sign_up">
+            <h3>Join our mailing list</h3>
+            <input type="email" placeholder="your@email.com">
+            <button id="sign_up_button_footer">Sign up</button>
+        </section>
+
+        <div>
+            <p>Copyright 2022 Avion LTD</p>
+            <button class="icon_button">
+                <img src="assets\icons\Logo--linkedin.png">
+            </button>
+            <button class="icon_button">
+                <img src="assets\icons\Logo--skype.png">
+            </button>
+            <button class="icon_button">
+                <img src="assets\icons\Logo--pinterest.png">
+            </button>
+        </div>
     </footer>
 </body>
-
-</html>
