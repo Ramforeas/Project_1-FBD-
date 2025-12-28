@@ -1,0 +1,373 @@
+* {
+    margin: 5px;
+    padding: 0;
+    box-sizing: border-box;
+    font-weight: 300;
+}
+
+body {
+    font-family: "Marcellus", serif;
+}
+
+.header__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__logo {
+    font-size: 28px;
+    font-weight: 500;
+    margin-left: 80px;
+}
+
+.icon-button--primary {
+    background: none;
+    border: 0px;
+    cursor: pointer;
+}
+
+.icon-button--primary:hover {
+    border-bottom: 1px solid gray;
+}
+
+.nav--main ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+    gap: 20px;
+    border-top: 1px solid rgba(128,128,128, 0.2)
+}
+
+
+.nav--main a,
+.nav--main a:visited {
+    text-decoration-line: none;
+    color: gray;
+}
+
+
+.nav--main a:hover {
+    border-bottom: 1px solid gray;
+}
+
+.intro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 110px;
+    margin-top: 50px;
+}
+
+.intro__title {
+    margin-left: 55px;
+    margin-top: 50px;
+    color: aliceblue;
+    font-size: 30px;
+}
+
+.intro__content {
+    height: 540px;
+    width: 60%;
+    background-color: rgb(52, 29, 75);
+    margin: 0px;
+}
+
+.intro__text {
+    margin-left: 55px;
+    color: aliceblue;
+    font-family: "Jost", sans-serif;
+    font-size: 20px;
+}
+
+.intro__image {
+    height: 540px;
+    margin: 0px;
+}
+
+.button--primary {
+    margin-left: 55px;
+    margin-top: 50px;
+    margin-bottom: 150px;
+    font-size: 16px;
+    color: aliceblue;
+    font-family: "Jost", sans-serif;
+    padding: 15px 30px;
+    background-color: rgb(89, 66, 111);
+    border: none;
+    cursor: pointer;
+}
+
+.button--primary:hover {
+    background-color: rgb(92, 63, 120);
+    font-size: 17px;
+    color: aliceblue;
+    padding: 14px 27px;
+    border: none;
+    cursor: pointer;
+}
+
+
+
+.advantages__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 120px;
+}
+
+.advantages__title {
+    display: flex;
+    justify-content: center;
+}
+
+.advantages__item {
+    padding-right: 50px;
+}
+
+.advantages__title {
+    padding-bottom: 30px;
+}
+
+.advantages__text {
+    font-family: "Jost", sans-serif;
+    font-weight: 350;
+}
+
+.new-ceramics__title {
+    font-size: 30px;
+    padding: 15px 10px;
+}
+
+.new-ceramics__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 15px;
+}
+
+.new-ceramics__heading {
+    font-size: 20px;
+}
+
+.new-ceramics__price {
+    font-family: "Jost", sans-serif;
+    font-weight: 350;
+    font-size: 19px;
+}
+
+.button--secondary {
+    font-size: 16px;
+    color: black;
+    font-family: "Jost", sans-serif;
+    padding: 15px 30px;
+    background-color: rgba(213, 213, 213, 0.2);
+    border: none;
+    cursor: pointer;
+}
+
+.button--secondary:hover {
+    background-color: rgba(200, 199, 199, 0.2);
+    font-size: 17px;
+    color: black;
+    padding: 14px 27px;
+    border: none;
+    cursor: pointer;
+}
+
+.button-center {
+    display: flex;
+    justify-content: center;
+}
+
+.popular-products__title {
+    font-size: 30px;
+    padding-top: 100px;
+    padding-bottom: 15px;
+}
+
+.popular-products__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 15px;
+}
+
+.popular-products__price {
+    font-family: "Jost", sans-serif;
+    font-weight: 350;
+    font-size: 19px;
+}
+
+.popular-products__heading {
+    font-size: 20px;
+}
+
+.sign-up-outter--main {
+    display: grid;
+    place-items: center;
+    margin-top: 40px;
+    margin-bottom: 0px;
+    width: 100%;
+    height: 400px;
+    background-color: rgba(213, 213, 213, 0.2);
+}
+
+.sign-up--main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 88%;
+    height: 300px;
+    background-color: white;
+}
+
+.sign-up__email--primary {
+    background-color: rgba(200, 199, 199, 0.2);
+    font-size: 16px;
+    color: black;
+    font-family: "Jost", sans-serif;
+    padding: 14px 27px;
+    padding-right: 170px;
+    border: none;
+    cursor: pointer;
+    margin-right: 0px;
+}
+
+.sign-up__title--primary {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.sign-up__text--primary {
+    font-family: "Jost", sans-serif;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+
+.button--tertiary {
+    font-size: 16px;
+    color: white;
+    font-family: "Jost", sans-serif;
+    padding: 14px 27px;
+    background-color: rgb(52, 29, 75);
+    border: none;
+    cursor: pointer;
+    margin-left: 0px;
+}
+
+.button--tertiary:hover {
+    font-size: 17px;
+    color: white;
+    padding: 13px 25px;
+    border: none;
+    cursor: pointer;
+}
+
+.outro {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.outro-description__title {
+    font-size: 25px;
+}
+
+
+
+.outro-description__text {
+    font-family: "Jost", sans-serif;
+    font-weight: 350;
+    padding: 12px 0px;
+}
+
+footer {
+    background-color: rgb(52, 29, 75);
+    height: 330px;
+}
+
+.footer-nav {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 40px 65px;
+}
+
+:is(.footer-nav__menu, .footer-nav__categoties, .footer-nav__our-company) ul {
+    list-style-type: none;
+}
+
+.menu__title,
+.categoties__title,
+.company__title {
+    margin-left: 14px;
+    color: white;
+    margin-bottom: 10px;
+    font-size: 17px;
+}
+
+:is(.footer-nav__menu, .footer-nav__categoties, .footer-nav__our-company) a {
+    text-decoration-line: none;
+    color: white;
+    font-family: "Jost", sans-serif;
+}
+
+:is(.footer-nav__menu, .footer-nav__categoties, .footer-nav__our-company) a:hover {
+    border-bottom: 1px solid white;
+}
+
+.sign-up__title--secondary {
+    color: white;
+}
+
+.button__quaternary {
+    font-size: 16px;
+    color: rgb(52, 29, 75);
+    font-family: "Jost", sans-serif;
+    padding: 14px 27px;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    margin-left: 0px;
+    font-weight: 350;
+}
+
+.button__quaternary:hover {
+    font-size: 17px;
+    padding: 13px 25px;
+    border: none;
+    cursor: pointer;
+}
+
+.sign-up__email--secondary {
+    background-color: rgb(89, 66, 111);
+    font-size: 16px;
+    color: white;
+    font-family: "Jost", sans-serif;
+    padding: 14px 27px;
+    padding-right: 170px;
+    border: none;
+    cursor: pointer;
+    margin-right: 0px;
+}
+
+.sign-up__email--secondary::placeholder {
+    color: white;
+}
+
+.references__text {
+    display: flex;
+    justify-content: center;
+    font-family: "Jost", sans-serif;
+    color: white;
+    font-size: 15px;
+    margin-left: 80px;
+    padding-top: 15px;
+    margin-bottom: 70px;
+    border-top: 1px solid rgb(89, 66, 111);
+}
