@@ -2,6 +2,105 @@
     margin: 0px;
 }
 
+.menu-toggle {
+    display: flex;
+    justify-self: flex-end;
+    position: sticky;
+    top: 10px;
+    z-index: 1001;
+}
+
+.header__container {
+    display: grid;
+    grid-template-columns: 8% 8% 8% 61% 15%;
+    grid-template-rows: 1;
+    justify-items: center;
+    margin-top: 5px;
+}
+
+.ibp--1 {
+    grid-row: 1;
+    grid-column: 1;
+}
+
+.ibp--2 {
+    grid-row: 1;
+    grid-column: 2;
+}
+
+.ibp--3 {
+    grid-row: 1;
+    grid-column: 3;
+}
+
+.header__logo {
+    grid-row: 1;
+    grid-column: 4;
+}
+
+.menu-toggle {
+    grid-row: 1;
+    grid-column: 5;
+}
+
+.nav {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 300px;
+    height: 100vh;
+    background: white;
+    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+    padding: 80px 30px 30px;
+    transition: right 0.4s ease;
+    z-index: 1000;
+    overflow-y: auto;
+}
+
+.nav.active {
+    right: 0;
+}
+
+.nav__list {
+    flex-direction: column;
+    gap: 0;
+}
+
+.nav__item {
+    width: 100%;
+}
+
+.nav__link {
+    display: block;
+    width: 100%;
+    padding: 15px 0;
+    font-size: 18px;
+    border-bottom: 1px solid #eee;
+}
+
+.nav__link:hover,
+.nav__link.active {
+    background: transparent;
+    color: var(--primary-color);
+    padding-left: 10px;
+}
+
+.nav-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+
+.nav-overlay.active {
+    display: block;
+}
+
+
 .header__logo {
     margin-left: 20px;
     margin-bottom: 5px;
@@ -10,7 +109,7 @@
 
 .header__container {
     margin-bottom: 10px;
-    border-bottom: 1px solid rgba(128,128,128, 0.2)
+    border-bottom: 1px solid rgba(128, 128, 128, 0.2)
 }
 
 .icon-button--primary {
@@ -54,7 +153,7 @@
 }
 
 .intro__image {
-   display: none;
+    display: none;
 }
 
 .advantages__container {
@@ -72,13 +171,13 @@
 
 .new-ceramics__container,
 .popular-products__container {
-   display: grid;
-   grid-template-columns: auto auto;
-   grid-template-rows: auto auto;
-   grid-auto-flow: row;
-   justify-content: space-around;
-   padding: 15px;
-   gap: 23px 10px;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    grid-auto-flow: row;
+    justify-content: space-around;
+    padding: 15px;
+    gap: 23px 10px;
 }
 
 .popular-products__item--sofa {

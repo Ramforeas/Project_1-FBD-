@@ -17,22 +17,27 @@
 </head>
 
 <body>
-    <header>
+    <header class="header">
         <div class="header__container">
-            <button class="icon-button--primary">
+            <button class="icon-button--primary ibp--1">
                 <img src="assets/icons/Search.png" alt="">
             </button>
             <h1 class="header__logo">Avion</h1>
-            <span>
-                <button class="icon-button--primary">
-                    <img src="assets/icons/Shopping--cart.png" alt="">
-                </button>
-                <button class="icon-button--primary">
-                    <img src="assets/icons/User--avatar.png" alt="">
-                </button>
-            </span>
+            <button class="icon-button--primary ibp--2">
+                <img src="assets/icons/Shopping--cart.png" alt="">
+            </button>
+            <button class="icon-button--primary ibp--3">
+                <img src="assets/icons/User--avatar.png" alt="">
+            </button>
+            <button class="menu-toggle" id="menuToggle" aria-label="Открыть меню" aria-expanded="false">
+                <span class="menu-toggle__line"></span>
+                <span class="menu-toggle__line"></span>
+                <span class="menu-toggle__line"></span>
+            </button>
         </div>
-        <nav class="nav nav--main">
+
+
+        <nav class="nav nav--main" id="mainNav">
             <ul>
                 <li><a href="">Plant pots</a></li>
                 <li><a href="">Ceramics</a></li>
@@ -67,17 +72,17 @@
                 <h3 class="advantages__heading">Next day as&nbsp;standard</h3>
                 <p class="advantages__text">Order before 3pm and get your order<br>
                     the next day as&nbsp;standard</p>
-                
+
                 <img class="advantages__icon" src="assets/icons/Checkmark--outline.png" alt="">
                 <h3 class="advantages__heading">Made by&nbsp;true artisans</h3>
                 <p class="advantages__text">Handmade crafted goods made with<br>
                     real passion and craftmanship</p>
-                
+
                 <img class="advantages__icon" src="assets/icons/Purchase.png" alt="">
                 <h3 class="advantages__heading">Unbeatable prices</h3>
                 <p class="advantages__text">For our materials and quality you<br>
                     won&rsquo;t find better prices anywhere</p>
-               
+
                 <img class="advantages__icon" src="assets/icons/Sprout.png" alt="">
                 <h3 class="advantages__heading">Recycled packaging</h3>
                 <p class="advantages__text">We&nbsp;use 100% recycled packaging to<br>
@@ -221,4 +226,10 @@
             <p class="references__text">Copyright 2022 Avion LTD</p>
         </div>
     </footer>
+
+    <button class="scroll-top" id="scrollTop" aria-label="Наверх">
+        ↑
+    </button>
+
+    <script src="scripts/menu.js"></script>
 </body>

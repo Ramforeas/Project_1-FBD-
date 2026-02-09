@@ -1,3 +1,11 @@
+:root {
+    --primary-color: #000000;
+    --secondary-color: #f0f0f0;
+    --text-color: #333;
+    --font-family: 'Roboto', sans-serif;
+    --transition: all 0.3s ease;
+}
+
 * {
     margin: 5px;
     padding: 0;
@@ -5,29 +13,91 @@
     font-weight: 300;
 }
 
-html, body {
+html,
+body {
     width: 100%;
     font-family: "Marcellus", serif;
+}
+
+.scroll-top {
+    position: fixed;
+    bottom: 33px;
+    right: 33px;
+    width: 60px;
+    height: 60px;
+    background: white;
+    color: black;
+    border: 3px;
+    border-color: black;
+    border-radius: 50%;
+    font-size: 24px;
+    cursor: pointer;
+    box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.scroll-top.visible {
+    opacity: 1;
+    visibility: visible;
+}
+
+.scroll-top:hover {
+    background: white;
+    transform: scale(1.1);
+}
+
+.scroll-top:active {
+    transform: scale(0.95);
 }
 
 img {
     max-width: 100%;
 }
 
+.header {
+    background: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
 .header__container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 5% 85% 5% 5%;
+    justify-items: center;
+    grid-template-rows: 1;
+    margin-top: 5px;
+}
+
+.ibp--1 {
+    grid-row: 1;
+    grid-column: 1;
+}
+
+.ibp--2 {
+    grid-row: 1;
+    grid-column: 3;
+}
+
+.ibp--3 {
+    grid-row: 1;
+    grid-column: 4;
 }
 
 .header__logo {
-    font-size: 28px;
-    font-weight: 500;
-    margin-left: 80px;
+    grid-row: 1;
+    grid-column: 2;
 }
 
 .icon-button--primary {
     background: none;
+    padding: 5px;
     border: 0px;
     cursor: pointer;
 }
@@ -42,7 +112,7 @@ img {
     justify-content: center;
     padding: 15px;
     gap: 20px;
-    border-top: 1px solid rgba(128,128,128, 0.2)
+    border-top: 1px solid rgba(128, 128, 128, 0.2)
 }
 
 
@@ -55,6 +125,39 @@ img {
 
 .nav--main a:hover {
     border-bottom: 1px solid gray;
+}
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 44px;
+    height: 44px;
+    background: transparent;
+    border: none;
+    padding: 12px 10px;
+    cursor: pointer;
+    z-index: 1001;
+}
+
+.menu-toggle__line {
+    width: 100%;
+    height: 3px;
+    background: var(--text-color);
+    border-radius: 2px;
+    transition: var(--transition);
+}
+
+.menu-toggle.active .menu-toggle__line:nth-child(1) {
+    transform: rotate(45deg) translate(6px, 6px);
+}
+
+.menu-toggle.active .menu-toggle__line:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-toggle.active .menu-toggle__line:nth-child(3) {
+    transform: rotate(-45deg) translate(6px, -6px);
 }
 
 .intro {
@@ -102,6 +205,7 @@ img {
     background-color: rgb(89, 66, 111);
     border: none;
     cursor: pointer;
+    box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.3);
 }
 
 .button--primary:hover {
@@ -177,6 +281,7 @@ img {
     background-color: rgba(213, 213, 213, 0.2);
     border: none;
     cursor: pointer;
+    box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.2);
 }
 
 .button--secondary:hover {
@@ -247,6 +352,7 @@ img {
     border: none;
     cursor: pointer;
     margin-right: 0px;
+    box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.1);
 }
 
 .sign-up__title--primary {
@@ -270,6 +376,7 @@ img {
     border: none;
     cursor: pointer;
     margin-left: 0px;
+    box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.2);
 }
 
 .button--tertiary:hover {
@@ -289,6 +396,7 @@ img {
 .outro-description__title {
     font-size: 25px;
 }
+
 .outro-description__text {
     font-family: "Jost", sans-serif;
     font-weight: 350;
@@ -345,6 +453,7 @@ footer {
     cursor: pointer;
     margin-left: 0px;
     font-weight: 350;
+    box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.2);
 }
 
 .button__quaternary:hover {
@@ -364,6 +473,7 @@ footer {
     border: none;
     cursor: pointer;
     margin-right: 0px;
+    box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.2);
 }
 
 .sign-up__email--secondary::placeholder {
