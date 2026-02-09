@@ -12,6 +12,7 @@
         rel="stylesheet">
 
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/mobile.css" media="screen and (max-width:940px)">
     <title>Avion</title>
 </head>
 
@@ -95,7 +96,7 @@
                 </div>
 
                 <div class="new-ceramics__item">
-                    <img class="new-ceramics__image" src="assets/img/RusticVase.png" height="375" width="305" alt="">
+                    <img class="new-ceramics__image" src="assets/img/RusticVase.png" alt="">
                     <p class="new-ceramics__heading">Rustic Vase Set</p>
                     <p class="new-ceramics__price">&pound;155</p>
                 </div>
@@ -119,7 +120,7 @@
             <h2 class="popular-products__title">Our popular products</h2>
 
             <div class="popular-products__container">
-                <div class="popular-products__item">
+                <div class="popular-products__item--sofa">
                     <img class="popular-products__image" src="assets/img/Sofa.png" alt="">
                     <p class="popular-products__heading">The Poplar suede sofa</p>
                     <p class="popular-products__price">&pound;980</p>
@@ -209,8 +210,10 @@
 
             <div class="sign-up--footer">
                 <h3 class="sign-up__title--secondary">Join our mailing list</h3>
-                <input class="sign-up__email--secondary" type="email" placeholder="your@email.com">
-                <button class="button button__quaternary">Sign up</button>
+                <div>
+                    <input class="sign-up__email--secondary" type="email" placeholder="your@email.com">
+                    <button class="button button__quaternary">Sign up</button>
+                </div>
             </div>
         </nav>
 

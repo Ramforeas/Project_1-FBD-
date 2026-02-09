@@ -1,0 +1,140 @@
+* {
+    margin: 0px;
+}
+
+.header__logo {
+    margin-left: 20px;
+    margin-bottom: 5px;
+    font-size: 26px;
+}
+
+.header__container {
+    margin-bottom: 10px;
+    border-bottom: 1px solid rgba(128,128,128, 0.2)
+}
+
+.icon-button--primary {
+    padding-left: 7px;
+    padding-right: 7px;
+}
+
+.nav--main {
+    display: none;
+}
+
+.intro {
+    flex-direction: column;
+    padding-bottom: 60px;
+    margin-top: 10px;
+}
+
+.intro__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    padding: 24px;
+    margin-top: 0px;
+}
+
+.intro__title {
+    font-size: 27px;
+}
+
+.button--primary {
+    margin-bottom: 60px;
+}
+
+.intro__title,
+.intro__text,
+.button--primary {
+    margin-left: 0;
+    text-align: center;
+}
+
+.intro__image {
+   display: none;
+}
+
+.advantages__container {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0;
+    gap: 24px;
+    text-align: center;
+}
+
+.popular-products__title,
+.new-ceramics__title {
+    padding-left: 15px;
+}
+
+.new-ceramics__container,
+.popular-products__container {
+   display: grid;
+   grid-template-columns: auto auto;
+   grid-template-rows: auto auto;
+   grid-auto-flow: row;
+   justify-content: space-around;
+   padding: 15px;
+   gap: 23px 10px;
+}
+
+.popular-products__item--sofa {
+    grid-column: span 2;
+
+}
+
+.sign-up--main {
+    width: 100%;
+    height: auto;
+    padding: 22px;
+}
+
+.sign-up__email--primary,
+.sign-up__email--secondary {
+    padding-right: 27px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.sign-up__title--primary {
+    font-size: 27px;
+}
+
+.outro {
+    flex-direction: column;
+    gap: 24px;
+    margin-top: 28px;
+}
+
+.outro-description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+footer {
+    height: auto;
+}
+
+.footer-nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    padding: 24px;
+    gap: 24px;
+}
+
+.sign-up--footer {
+    margin-top: 13px;
+    grid-row: 3;
+    grid-column: span 2;
+}
+
+.references__text {
+    margin-left: 0;
+    text-align: center;
+}
